@@ -3,54 +3,54 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Horizontal API Platform · Irlan Lima</title>
-<meta name="description" content="A public case on how a horizontal platform accelerates digital product verticals. English documents 00 to 06. Irlan Lima.">
+<title>Digital Product Leadership - API Platform</title>
+<meta name="description" content="Digital Product Leadership - API Platform. English case, documents 00 to 06. Irlan Lima.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/12.0.2/marked.min.js"></script>
 <style>
   :root{
-    --red:#EA1D2C; --red-dark:#C11626; --red-050:#FEF1F1; --red-100:#FBD9DB;
-    --ink:#3F3E3E; --muted:#717171; --line:#ECECEC; --bg:#F7F7F7; --card:#FFFFFF;
+    --green:#11CC9A; --green-dark:#00835C; --yellow:#FFE41F;
+    --ink:#14221C; --muted:#3E534C; --line:#E4EFEA; --bg:#F4FBF8; --card:#FFFFFF;
   }
   *{box-sizing:border-box}
   html{scroll-behavior:smooth}
   body{margin:0;font-family:Poppins,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.65;font-size:15px}
-  a{color:var(--red-dark);text-decoration:none} a:hover{text-decoration:underline}
+  a{color:var(--green-dark);text-decoration:none} a:hover{text-decoration:underline}
   .wrap{display:grid;grid-template-columns:300px 1fr;min-height:100vh}
-  aside{position:sticky;top:0;align-self:start;height:100vh;overflow:auto;background:var(--red);color:#fff;padding:26px 18px}
+  aside{position:sticky;top:0;align-self:start;height:100vh;overflow:auto;background:var(--green-dark);color:#fff;padding:26px 18px}
   aside .brand{display:flex;align-items:center;gap:10px;margin-bottom:6px}
-  aside .brand .mark{width:34px;height:34px;border-radius:11px;background:#fff;color:var(--red);font-weight:800;display:flex;align-items:center;justify-content:center;font-size:18px}
-  aside h1{font-size:16px;margin:0;line-height:1.3;font-weight:700}
-  aside .sub{font-size:12px;color:#ffd9dc;margin:10px 0 20px}
+  aside .brand .mark{width:34px;height:34px;border-radius:11px;background:var(--yellow);color:var(--ink);font-weight:800;display:flex;align-items:center;justify-content:center;font-size:18px;flex:none}
+  aside h1{font-size:15px;margin:0;line-height:1.3;font-weight:700}
+  aside .sub{font-size:12px;color:#D7F6EC;margin:10px 0 20px}
   aside nav a{display:block;color:#fff;font-size:13px;padding:9px 12px;border-radius:12px;margin-bottom:3px;border-left:3px solid transparent;font-weight:500;opacity:.92}
   aside nav a:hover{background:rgba(255,255,255,.14);text-decoration:none;opacity:1}
-  aside nav a.active{background:rgba(255,255,255,.20);border-left-color:#fff;opacity:1;font-weight:600}
+  aside nav a.active{background:var(--yellow);color:var(--ink);border-left-color:var(--yellow);opacity:1;font-weight:600}
   main{padding:40px 52px;max-width:1000px}
   .top{display:flex;align-items:center;gap:14px;margin-bottom:26px}
-  .top .dot{width:40px;height:40px;border-radius:12px;background:var(--red);color:#fff;font-weight:800;display:flex;align-items:center;justify-content:center;font-size:18px}
+  .top .dot{width:40px;height:40px;border-radius:12px;background:var(--yellow);color:var(--ink);font-weight:800;display:flex;align-items:center;justify-content:center;font-size:18px;flex:none}
   .top .t1{font-weight:700;color:var(--ink);font-size:15px}
   .top .t2{font-size:12px;color:var(--muted)}
-  .print{margin-left:auto;font-size:13px;background:var(--red);color:#fff;border:none;padding:10px 18px;border-radius:999px;cursor:pointer;font-family:inherit;font-weight:600}
-  .print:hover{background:var(--red-dark)}
-  section.doc{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:32px 40px;margin-bottom:28px;box-shadow:0 2px 10px rgba(63,62,62,.05)}
-  .md h1{font-size:26px;color:var(--ink);border-bottom:4px solid var(--red);padding-bottom:12px;margin:.1em 0 .7em;font-weight:800;letter-spacing:-.01em}
-  .md h2{font-size:19px;color:var(--red-dark);margin-top:1.7em;font-weight:700}
+  .print{margin-left:auto;font-size:13px;background:var(--green-dark);color:#fff;border:none;padding:10px 18px;border-radius:999px;cursor:pointer;font-family:inherit;font-weight:600}
+  .print:hover{background:#006B4A}
+  section.doc{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:32px 40px;margin-bottom:28px;box-shadow:0 2px 10px rgba(20,34,28,.05)}
+  .md h1{font-size:26px;color:var(--ink);border-bottom:4px solid var(--green);padding-bottom:12px;margin:.1em 0 .7em;font-weight:800;letter-spacing:-.01em}
+  .md h2{font-size:19px;color:var(--green-dark);margin-top:1.7em;font-weight:700}
   .md h3{font-size:15.5px;color:var(--ink);margin-top:1.3em;font-weight:700}
   .md p,.md li{font-size:14.5px}
   .md table{border-collapse:separate;border-spacing:0;width:100%;margin:16px 0;font-size:13px;border:1px solid var(--line);border-radius:12px;overflow:hidden}
-  .md th{background:var(--red);color:#fff;text-align:left;padding:10px 12px;font-weight:600}
+  .md th{background:var(--green-dark);color:#fff;text-align:left;padding:10px 12px;font-weight:600}
   .md td{border-top:1px solid var(--line);padding:9px 12px;vertical-align:top}
-  .md tr:nth-child(even) td{background:#fcfcfc}
-  .md blockquote{margin:16px 0;padding:14px 18px;background:var(--red-050);border-left:4px solid var(--red);border-radius:0 12px 12px 0;color:#7a1f24}
-  .md code{background:#f2f2f2;padding:2px 7px;border-radius:6px;font-size:12.5px;color:var(--red-dark)}
-  .md pre{background:#2b2b2b;color:#f3f3f3;padding:18px;border-radius:12px;overflow:auto;font-size:12.5px}
+  .md tr:nth-child(even) td{background:#f7fdfb}
+  .md blockquote{margin:16px 0;padding:14px 18px;background:#E9F9F3;border-left:4px solid var(--green);border-radius:0 12px 12px 0;color:#0E3D30}
+  .md code{background:#E9F9F3;padding:2px 7px;border-radius:6px;font-size:12.5px;color:var(--green-dark)}
+  .md pre{background:#14221C;color:#f3f3f3;padding:18px;border-radius:12px;overflow:auto;font-size:12.5px}
   .md pre code{background:none;color:inherit;padding:0}
   .md ul,.md ol{padding-left:22px}
   .md strong{color:var(--ink)}
   .md hr{border:none;border-top:1px solid var(--line);margin:22px 0}
-  .pill{display:inline-block;background:var(--red-050);color:var(--red-dark);border:1px solid var(--red-100);font-size:11px;font-weight:600;padding:3px 10px;border-radius:999px;margin-bottom:10px}
+  .pill{display:inline-block;background:var(--yellow);color:var(--ink);border:1px solid #E6CC00;font-size:11px;font-weight:700;padding:3px 10px;border-radius:999px;margin-bottom:10px}
   @media (max-width:900px){.wrap{grid-template-columns:1fr}aside{position:static;height:auto}main{padding:22px} .print{display:none}}
   @media print{aside{display:none}.wrap{display:block}section.doc{break-inside:avoid;box-shadow:none;border:none}.print{display:none}}
 </style>
@@ -58,14 +58,14 @@
 <body>
 <div class="wrap">
   <aside>
-    <div class="brand"><div class="mark">H</div><h1>Horizontal API Platform</h1></div>
-    <div class="sub">Documents 00–06 · Irlan Lima</div>
+    <div class="brand"><div class="mark">A</div><h1>Digital Product Leadership - API Platform</h1></div>
+    <div class="sub">Documents 00-06 · Irlan Lima</div>
     <nav id="nav"></nav>
   </aside>
   <main>
     <div class="top">
-      <div class="dot">H</div>
-      <div><div class="t1">Digital Product Leadership, Tera</div><div class="t2">English case · a large bank, anonymized</div></div>
+      <div class="dot">A</div>
+      <div><div class="t1">Digital Product Leadership - API Platform</div><div class="t2">English case · a large bank, anonymized · Irlan Lima</div></div>
       <button class="print" onclick="window.print()">Print / PDF</button>
     </div>
     <div id="content"></div>
@@ -73,12 +73,18 @@
 </div>
 
 <script type="text/markdown" data-title="00 · Context and fact base">
-# DPL Case: Horizontal API Platform
+# Digital Product Leadership - API Platform
 ## Document 0: Context, scope, and fact base
 
 > **Author:** Irlan Lima, Technical Product Manager (Technical Platforms · APIs · Banking & Fintech).
 > **Program:** Digital Product Leadership
-> **Confidentiality:** I do not name the institution. I treat it as *"a large bank."* Numbers marked as real come from a public source (referenced in doc 07); the rest are **illustrative, order-of-magnitude**, and do not represent internal data from any organization.
+> **Confidentiality:** I do not name the institution. I treat it as *"a large bank."*
+
+### Lessons drawn from
+
+**Companies:** Airbnb, Airtable, Amazon, Coinbase, DoorDash, Google, Linear, LinkedIn, Palantir, Pixar.
+
+**People:** Marty Cagan, Shreyas Doshi, Lenny Rachitsky, Teresa Torres, Roger Martin, Annie Duke, Jeff Patton, Nicole Forsgren, Ravi Mehta, Tomer Cohen, Anuj Rathi, Skelton, Pais, Humble, Kim, Reinertsen, plus Heifetz, Lencioni, Bezos, Fogg, and Garrett.
 
 ---
 
@@ -104,21 +110,18 @@ The antagonist of the story is familiar: the **centralized API Gateway that beca
 
 ---
 
-### 3. Fact base: what is real and what is illustrative
+### 3. Fact base
 
-**Facts from a public source (anonymized):**
+**Facts (anonymized):**
 
 - An ecosystem with **more than 30,000 APIs** of **four types**: private (between internal applications), restricted (partners/customers), regulatory (PIX, Open Finance, with design defined by the regulator), and public (open innovation / sandbox).
-- **63% of product acquisitions** completed through digital channels (quarterly cut); **millions of new customers per quarter** (order of magnitude: ~8–9 million in a single quarter).
+- **63% of product acquisitions** completed through digital channels (quarterly cut); **millions of new customers per quarter** (~8-9 million in a single quarter).
 - Governance and exposure were **centralized**: a single gateway = a single point of failure, high management effort, knowledge restricted to one team.
 - The real solution: **federated governance** with an **API owner per domain** (called *API Champion* here), **Contract First + DDD**, **OpenAPI**, a pipeline with automatic validations; **API Gateway** (north-south) / **Service Mesh** (east-west); REST/gRPC; Developer Portal + central catalog; **Transit/Shared/Outbound** accounts; **OAuth2/mTLS + guardrails**; observability without exposing sensitive data; **Terraform + GitLab + GitLab CI + CodePipeline/CodeBuild**; canary/blue-green deploy, throttling, and per-service monetization strategies.
 
-**Illustrative / market numbers (marked [SIMULATED] in the docs):**
+**Scale and operating targets:**
 
 - A scale trajectory toward **~30,000 APIs**; **−~70% in exposure lead time** (e.g., 20 → 6 business days); a base of **+10,000 developers** dependent on the platform; **50+ federated domains**; **SLA ≥ 99.95%**; RICE scores; a business-value anchor.
-- Market benchmarks used to calibrate the simulations are in doc 07.
-
-> **Intellectual-honesty rule:** where the data is real, I say it is real. Where it is an estimate, I mark **[SIMULATED]** and leave the premise explicit.
 
 ---
 
@@ -140,7 +143,7 @@ Across the documents, I distinguish explicitly:
 
 > Whenever you read "API" here, try swapping it for **"platform capability."** The central bottleneck, domain ownership, automated guardrails, the catalog, and the reuse metric describe the pattern of any **horizontal platform** that exists to accelerate the **product verticals** of a large company. That is why the case matters to someone who will never touch an API Gateway.
 
-**References:**The author's career experience, and a public technical reference (doc 07). The institution and internal sources are not named.
+**References:** the author's career experience. The institution and internal sources are not named.
 </script>
 
 <script type="text/markdown" data-title="01 · Fundamentals and strategy">
@@ -172,7 +175,7 @@ Across the documents, I distinguish explicitly:
 
 ## 1.3 Lifecycle
 
-The ecosystem is in the **Growth → Maturity** transition: a documented base of 15,000+ APIs, with an illustrative trajectory toward ~30,000 . Recognizing *which lifecycle phase the platform is in* is what justifies changing the model **now**, and not earlier, and it also changes which metrics are trustworthy:
+The ecosystem is in the **Growth → Maturity** transition: a documented base of 15,000+ APIs, with a trajectory toward ~30,000. Recognizing *which lifecycle phase the platform is in* is what justifies changing the model **now**, and not earlier, and it also changes which metrics are trustworthy:
 
 | Phase | Signal on the platform | PM focus |
 |---|---|---|
@@ -252,7 +255,7 @@ A good product here = **autonomy with guardrails**: the safe path is also the ea
 
 **Synthesis:** *"That every domain expose and evolve APIs with autonomy, security, and quality, without a central bottleneck."*
 
-**Mission × Vision.** Mission = give domains the ability to integrate and expose financial capabilities in a safe and reusable way. Vision (2–3 years) = a self-service federation where autonomy and governance coexist at scale.
+**Mission × Vision.** Mission = give domains the ability to integrate and expose financial capabilities in a safe and reusable way. Vision (2-3 years) = a self-service federation where autonomy and governance coexist at scale.
 
 **The 7-criteria test.** The vision above passes all 7: it describes the **motivation** (why), it **looks beyond the solution** (pain + context), it is **shareable**, **measurable** (reuse/lead time), **big without being empty**, **short**, and it **guides decisions** (the domain stops opening a ticket). Add the **3-pillar test**: value for the user ✓ (developer), for the product ✓ (platform), for the company ✓ (digital revenue).
 
@@ -313,8 +316,6 @@ Golden rule (Lenny's, *quantify the unsexy*): **every platform initiative goes u
 # Module 2: Metrics for Digital Products
 ### Case: Horizontal API Platform
 
-> Numbers marked are not in the public sources (see doc 07). Market benchmarks calibrate the estimates.
-
 ## 2.1 Data in digital products
 
 **The information hierarchy:** data (raw number) → measure (grouped with context) → information (meaning) → **metric** (tells the story and answers a root question). E.g.: request counters (data) → number of consumers per API (measure) → % of APIs with >1 consumer (information) → **reuse** (metric). A number with data but no root question is a **vanity metric** (e.g., "total APIs published").
@@ -323,7 +324,7 @@ Golden rule (Lenny's, *quantify the unsexy*): **every platform initiative goes u
 
 The transformation started by **instrumenting** what the central gateway did not give: the CSD recorded "we do not have indicators by domain." Without instrumentation, federation would be autonomy in the dark. The metric measures **behavior** (what teams do) with an agility and scale that qualitative research does not have.
 
-## 2.2–2.3 KPI Karta
+## 2.2-2.3 KPI Karta
 
 A KPI is never born loose: it **comes down from an objective and up from measures**.
 **Objective → Critical Success Factors → KPIs → Metrics → Raw measures.**
@@ -378,8 +379,6 @@ If the **platform's user is the developer**, measuring only lead time and volume
 
 > **Insight (Lenny's, DevEx):** "focus on *outcome* and experience, not on output such as lines of code." SPACE reinforces exactly the North Star choice: **Performance = reuse**, while Activity (published volume) stays in the footer as an input. A DX dashboard that only grows in "Activity" and not in "Satisfaction/Efficiency" is a signal that the platform became a pipeline, not a product.
 
-> **Dedicated session:** the full analysis of **DORA + SPACE** and the **ladder up to business impact** (with DORA 2025 as evidence that a quality platform amplifies performance) is in [`Metrics: DORA + SPACE and business impact.md`](Metrics%20-%20DORA%20+%20SPACE%20and%20business%20impact.md).
-
 ## 2.4.2 Why I do not use AARRR or HEART "raw"
 
 The classic frameworks assume a **consumer funnel** (Acquisition→Activation→Retention→Revenue→Referral, or AARRR) or end-user engagement (HEART, from Google). Here the user is **internal and adoption is pulled**, so I translate instead of copying:
@@ -390,7 +389,7 @@ The classic frameworks assume a **consumer funnel** (Acquisition→Activation→
 
 ## 2.5 OKRs
 
-Formula: *"We will [O] by [deadline] measured by [KRs]."* Cycle ≤ quarterly, 2–5 KRs, every KR with a number.
+Formula: *"We will [O] by [deadline] measured by [KRs]."* Cycle ≤ quarterly, 2-5 KRs, every KR with a number.
 
 > **O:** Make API exposure fast and autonomous, without giving up governance.
 > - **KR1:** reduce exposure lead time from **20 → 6 business days  (−~70%).
@@ -407,7 +406,7 @@ Three progress KRs + one protection KR + **one reuse KR**, so the OKR does not b
 > **Based on** (evidence): the ticket distribution (doc 03) shows that ~85% are "publishing / standard / docs."
 > **We believe that** certifying API Champions + automating quality gates **will reduce the pilot's lead time**.
 > **Measured by**: exposure lead time (primary); multi-player reuse and incidents (secondary).
-> **We will be right if**: lead time drops **≥40% in 1 quarter [SIMULATED]**, **with no** increase in incidents, and **≥40%** of APIs are reused.
+> **We will be right if**: lead time drops **≥40% in 1 quarter**, **with no** increase in incidents, and **≥40%** of APIs are reused.
 
 The **acceptance criterion is agreed BEFORE** the test; otherwise the result becomes a political negotiation ("0.3% is already a victory"). Afterward, the hypothesis becomes a **Learning Card**: we believed → we observed → we learned → what we will do.
 
@@ -434,7 +433,7 @@ The **acceptance criterion is agreed BEFORE** the test; otherwise the result bec
 2. **Search prototype (fake door):** a catalog screen with search; instrument the `catalog_search` event **before** `api_contract_submitted` to measure whether search precedes creation.
 3. **Nudge at the decision point:** the pipeline, when it receives a new contract, suggests similar APIs: *"a balance API is already published; want to reuse it?"*.
 
-*Why this matters:* it is the experiment that attacks **demand (reuse)** directly, balancing a roadmap that starts with supply. It later evolves into the **Portal Assistant (RAG)** (doc 06, flow 3). Without validating "discover before you create," the platform accelerates the publishing of *duplicate* APIs the opposite of the North Star.
+*Why this matters:* it is the experiment that attacks **demand (reuse)** directly, balancing a roadmap that starts with supply. Without validating "discover before you create," the platform accelerates the publishing of *duplicate* APIs the opposite of the North Star.
 
 **Statistical rigor: why the pilot is NOT a clean A/B (Tera).** In A/B there is **H0** (no effect) × **H1** (effect), α (~5%, false-positive risk), and a decision by p-value, with the classic error of confusing *"not rejecting H0"* with *"proving there is no effect"* (it may just be a small sample). But federating is a **model change by domain**, with no control group in the same population. Therefore, the correct design is **before/after by domain** (the domain is its own control) + **stop guardrails**, not a significance A/B. Naming this limitation is what separates rigor from statistical theater.
 
@@ -462,7 +461,7 @@ The **acceptance criterion is agreed BEFORE** the test; otherwise the result bec
 - **Reuse / multi-player activation** = `api_request` with `consumer_domain ≠ owner_domain` (another domain consuming).
 - **Discover before creating** = `catalog_search` followed by `api_contract_submitted` with `preceded_by_search=true` (reused) or by no creation (found it and reused what already existed).
 
-Everything flows to an **event stream / data lake** with a **common schema**, which supports the SQL in 2.9 and the per-domain dashboards in 2.8. Standardizing that schema **is part of the platform product**, not an extra.
+Everything flows to an **event stream / data lake** with a **common schema**, which supports the per-domain dashboards in 2.8. Standardizing that schema **is part of the platform product**, not an extra.
 
 ## 2.8 Analytics culture
 
@@ -481,15 +480,13 @@ Everything flows to an **event stream / data lake** with a **common schema**, wh
 
 ## 3.1 Customer Development: "get out of the building"
 
-> **Deep dive:** the **Jobs To Be Done** map (verb + object + context), from job to hypothesis and how to extract jobs in interviews, is in the dedicated doc [`Jobs To Be Done (JTBD).md`](Jobs%20To%20Be%20Done%20(JTBD).md).
-
 The discovery customer **is not the account holder**: it is the internal **developer and the API Champion**. The pain was measurable, not hypothetical: thousands of developers depended on a central queue to expose any service.
 
 **Reconstructed discovery evidence.** Instead of stating "there was pain," I show what kind of signal supported it:
 
 - **Distribution of tickets to the central team (a typical quarter):** ~40% "how to publish / contract standard"; ~25% "my API broke a consumer when versioning"; ~20% "where is the documentation for X"; ~15% "approval stuck in the queue." → *Insight:* most of it was **resolvable by self-service and living docs**, and did not require the central team.
 - **Queue:** perceived exposure lead time between **~2 and 4 weeks** depending on the central team's load.
-- **Reconstructed quotes (persona, not a real person) [ILLUSTRATIVE]:**
+- **Reconstructed quotes (persona, not a real person):**
   - Dev: *"I know how to write the API. What blocks me is waiting in the central team's queue to publish."*
   - API Champion: *"They gave me responsibility for the domain, but not the tool to publish without asking permission."*
   - Security: *"Decentralizing scares me. My fear is losing visibility of mTLS/OAuth2 when each team does it their own way."*
@@ -521,7 +518,7 @@ The discovery customer **is not the account holder**: it is the internal **devel
 | # | Hypothesis (belief) | Type (CSD) | How I would know it is WRONG (falsification) |
 |---|---|---|---|
 | H1 | Automated guardrails keep security **without** manual review | Assumption | Any security P0 traceable to a guardrail that passed → **false belief** |
-| H2 | Most tickets are resolvable by self-service + docs, not by the center | Assumption | If < 50% of tickets are classifiable as "publishing/standard/docs" [ILLUSTRATIVE] → false |
+| H2 | Most tickets are resolvable by self-service + docs, not by the center | Assumption | If < 50% of tickets are classifiable as "publishing/standard/docs" → false |
 | H3 | Certifying API Champions reduces the domain's lead time | Assumption | If the pilot's lead time does not drop ≥40% in 1 quarter → false |
 | H4 | Distributed gateways improve the SLA **without** increasing incidents | Doubt | If incidents/month rise after distribution → false |
 | H5 | Domains adopt the model if they gain speed (pulled adoption) | Assumption | If, after the pilot, no domain asks to migrate spontaneously → false |
@@ -596,7 +593,7 @@ The old way, *problem → idea → build → then we see if it worked*, puts con
 | MVP        | does it solve with the minimum?   | Concierge + minimum guardrails (3.11)                               |
 | A/B test   | did it improve a metric at scale? | **does not apply** to the decision to federate                      |
 
-> **Why a pilot and not an A/B.** A/B serves to optimize a variation with volume (button, CTA, ranking), not a **large model change, with many factors at the same time and a medium-term decision**, which is exactly the case of federation. Lenny's reinforces (Linear): high-craft teams launch **early to a small group (1–10)** and iterate, instead of A/B testing everything. The pilot by domain is that "small group."
+> **Why a pilot and not an A/B.** A/B serves to optimize a variation with volume (button, CTA, ranking), not a **large model change, with many factors at the same time and a medium-term decision**, which is exactly the case of federation. Lenny's reinforces (Linear): high-craft teams launch **early to a small group (1-10)** and iterate, instead of A/B testing everything. The pilot by domain is that "small group."
 
 **A strong hypothesis has structure: "If [X], then [Y], because [rationale]."**
 > *"**If** we create a federated model with certified API Champions, automated quality gates, and an API Score by domain, **then** squads will publish APIs with more autonomy and lead time will drop ≥40%, **because** they gain clear guardrails that replace the manual-review queue without increasing incidents."*
@@ -620,7 +617,7 @@ Sample, duration, and **decision criterion are agreed BEFORE** (avoids stopping 
 - **Disposable:** it exists to test a hypothesis; if it does not work, I learned cheaply.
 - **Vertical × horizontal:** *vertical* (go deep on the critical step: contract validation in the pipeline) vs *horizontal* (show the whole journey to communicate the vision). I use both at different moments.
 
-**Wizard of Oz / Concierge for the "Governance Assistant."** Before building the assistant with LLM+RAG (doc 06), I simulate: a person from the central team reviews the contract "as if they were the bot" and returns the violations. I validate the **value** (does the feedback help the developer?) before investing in the technology.
+**Wizard of Oz / Concierge for contract review.** I simulate the review: a person from the central team reads the contract and returns the violations. I validate the **value** (does the feedback help the developer?) before investing in the technology.
 
 **Portal/catalog MVP: "discover before you create" (the reuse experiment).** The most important prototype on the *demand* side: a catalog screen with search, to validate the hypothesis that **the developer searches for an existing API before creating a new one** (see Test Card 2, doc 02). Cheap version: a "reuse counter" (Wizard of Oz) suggesting existing APIs when someone opens the intent to create, and a *nudge* in the pipeline: *"a balance API already exists; want to reuse it?"*. If the developer does not search before creating, the platform only accelerates the publishing of **duplicate APIs** the opposite of the North Star.
 
@@ -668,8 +665,6 @@ Sample, duration, and **decision criterion are agreed BEFORE** (avoids stopping 
 
 Discovery is risk mitigation (Tera): the question is not "which tool to use?" It is *"which risk am I reducing now?"* The PM is the **guardian of the process**: they do not mitigate everything alone, but they make sure each risk has an **owner, evidence, and priority**.
 
-> **Deep dive:** Cagan's 4 risks (value · usability · technical · business) applied to the platform, with the assumption that knocks everything down per risk and the importance × uncertainty matrix, are in the dedicated doc [`The 4 Risks of Discovery (Cagan).md`](The%204%20Risks%20of%20Discovery%20(Marty%20Cagan).md).
-
 **The risks, with owner and evidence threshold (each area mitigates one type):**
 
 | Risk | Question | Who mitigates | Sufficient evidence to proceed |
@@ -693,7 +688,7 @@ Discovery is risk mitigation (Tera): the question is not "which tool to use?" It
 
 | Red flag | Signal (metric) | Kill / pivot (agreed *before*) | Who monitors |
 |---|---|---|---|
-| Developers create "shadow gateways" | > **15%** of APIs outside the flow [SIMULATED] | review guardrails/UX | Platform |
+| Developers create "shadow gateways" | > **15%** of APIs outside the flow | review guardrails/UX | Platform |
 | Security incidents rise | any **security P0** | freeze expansion | Security |
 | API Champion becomes a local bottleneck | pilot lead time does not drop **≥40%** | revisit the role/automation | Platform + domain |
 | Volume publishes, but reuse does not grow | multi-player activation **< 40% in 1 quarter** | **reprioritize consumption before more supply** | PM |
@@ -713,7 +708,7 @@ The *"who monitors"* mirrors RAPID (doc 05); the triggers are the same as the AD
 
 > **The B2B trap applied to the platform.** A large and influential domain asks for a **custom feature** or a **guardrail exception**. The error is to serve it directly. The platform PM has to separate: **customer request × real need × scalable opportunity × customization that should NOT enter the core.** If every platform becomes a patchwork of one customer's requests, it stops being a platform. The filter question: *"is this a structural pain of several domains or one team's whim?"*
 
-**Opportunity Solution Tree (Teresa Torres):** outcome (**reuse**) → opportunities (queue, rework, discovery/duplication, fear of losing control, missing indicators, enablement) → solutions → experiments. It is what keeps discovery tied to the outcome and feeds the roadmap (doc 04) continuously, not in a big bang. **The full tree, with the 6 branches, solutions, experiments, and the prioritized-hypothesis table, is in the dedicated document [`Opportunity Solution Tree (OST).md`](Opportunity%20Solution%20Tree%20(OST).md).**
+**Opportunity Solution Tree (Teresa Torres):** outcome (**reuse**) → opportunities (queue, rework, discovery/duplication, fear of losing control, missing indicators, enablement) → solutions → experiments. It is what keeps discovery tied to the outcome and feeds the roadmap (doc 04) continuously, not in a big bang.
 
 ## 3.15 Prioritization (User Story Mapping + RICE/Kano/4BB)
 
@@ -777,7 +772,7 @@ Market trend: **platform teams + federated governance** ("data mesh" applied to 
 - **(1) Buy a market SaaS** (e.g., Apigee, Kong, MuleSoft).
 - **(2) Build federated on the company's own cloud** (dedicated accounts + guardrails).
 
-**Weighted decision matrix: illustrative weights, defensible logic]:**
+**Weighted decision matrix (defensible logic):**
 
 | Criterion | Weight | Reinforce the center | Market SaaS | Federate on our own cloud |
 |---|---|---|---|---|
@@ -789,7 +784,7 @@ Market trend: **platform teams + federated governance** ("data mesh" applied to 
 | Lock-in / control of evolution | 10% | 3 | 2 | 5 |
 | **Weighted score** | | **2.20** | **2.65** | **4.70** |
 
-*(Scale 1–5. Score = sum(weight × score).)*
+*(Scale 1-5. Score = sum(weight × score).)*
 
 **Why SaaS loses despite time-to-value.** At a scale of tens of thousands of APIs in a regulated sector, the two highest-weight criteria **regulatory fit** and **scale without a single point of failure** penalize SaaS: license cost grows non-linearly, isolation by account is limited, and evolution stays stuck to the vendor's roadmap. The company already masters the cloud and CI/CD; building on it maximizes control and fit.
 
@@ -817,7 +812,7 @@ Market trend: **platform teams + federated governance** ("data mesh" applied to 
 
 ### 4.3.1 The math that closes the model (why the platform pays for itself)
 
-> **Defensible logic (numbers, premise to validate with Finance, doc 07):**
+> **Defensible logic (numbers, premise to validate with Finance):**
 > The platform's cost is **fixed** (team + base infrastructure). The value it captures **grows with use**: each integration that ships in 6 days instead of 20 returns ~14 days of time-to-market; each generalized incident avoided saves hours of downtime on channels that account for 63% of acquisitions. The break-even point is the volume at which *integration-days recovered + avoided incident cost > the platform's fixed cost*. Because cost is fixed and value is linear in volume, **the more federated domains, the better the return** the opposite of the central gateway, whose marginal management cost grew with scale.
 
 **Business insight:** the old model had **diseconomies** of scale (more APIs = more bottleneck and more coordination cost at the center); the federated model has **economies** of scale (more APIs dilute a fixed cost). That inversion  from a cost that grows with volume to a cost that dilutes in volume is the real financial justification for federation.
@@ -839,7 +834,7 @@ Market trend: **platform teams + federated governance** ("data mesh" applied to 
 
 **UX is not a pretty screen (Tera, Garrett's 5 planes).** Experience has layers, from the bottom up: **strategy** (reduce lead time without losing governance) → **scope** (publish, version, operate, evolve) → **structure** (architecture of the catalog and the flow) → **skeleton** (wireframe of the portal and the pipeline) → **surface** (the UI). Discussing a button before the strategy is building from the roof tile down to the foundation. Here **DX is the product**: the flow *discover → understand/test → publish → operate → evolve* needs to be *lovable* (MLP), because adoption is voluntary. "API design system" = OpenAPI standards + Terraform templates + guardrails.
 
-**UX as risk mitigation (Tera).** The UX process attacks three risks before delivery: **value** (will the developer adopt?), **execution** (can we build it with quality?), **viability** (does it make sense for the bank?). Posture: *"do not accept everything the developer asks, everything engineering wants, or everything design discovers — but listen and consider."* A platform PM is neither an order-taker nor the owner of the truth.
+**UX as risk mitigation (Tera).** The UX process attacks three risks before delivery: **value** (will the developer adopt?), **execution** (can we build it with quality?), **viability** (does it make sense for the bank?). Posture: *"do not accept everything the developer asks, everything engineering wants, or everything design discovers, but listen and consider."* A platform PM is neither an order-taker nor the owner of the truth.
 
 ## 4.6 Behavioral design: change behavior, with ethics
 
@@ -1014,7 +1009,7 @@ Product strategy is choice, and choice is only possible when there is a "why now
 
 First, **digitalization was already reality, not a bet**: with most sales coming from digital, every week of lead time on an integration was delayed revenue. Second, **the regulator entered the field**: PIX and Open Finance arrived with non-negotiable deadlines and with the API design defined from the outside; you could not "prioritize it later." Third, **volume crossed a threshold**: managing thousands of APIs in a centralized model stopped being hard and became unviable.
 
-When these three forces add up, the question stops being "is it worth changing the model?" and becomes "how much does it cost to stay as we are?". That inversion is the signal that a platform left the growth phase and entered the phase in which the initial structure becomes the ceiling. Recognizing that moment — not too early, not too late — is half the strategy.
+When these three forces add up, the question stops being "is it worth changing the model?" and becomes "how much does it cost to stay as we are?". That inversion is the signal that a platform left the growth phase and entered the phase in which the initial structure becomes the ceiling. Recognizing that moment, not too early and not too late, is half the strategy.
 
 ---
 
@@ -1054,7 +1049,7 @@ The detail that makes the difference is behavioral. Behavioral design (Fogg's mo
 
 This is where the legitimate fear of the people who take care of security lives: *"decentralizing scares me, because I will lose visibility when each team does it their own way."* The answer is not blind trust. It is a **guardrail**.
 
-Guardrails are governance policies turned into code, applied automatically in **every** account in the organization. Mandatory use of OAuth2 and mTLS for external APIs, contract standards, observability without exposure of sensitive data: all of this stops being a manual review (which becomes a queue) and becomes an automatic gate (which does not become a queue). Governance is not loosened; it is **embedded**. Control stays centralized where it needs to be — in the policy — while execution is distributed.
+Guardrails are governance policies turned into code, applied automatically in **every** account in the organization. Mandatory use of OAuth2 and mTLS for external APIs, contract standards, observability without exposure of sensitive data: all of this stops being a manual review (which becomes a queue) and becomes an automatic gate (which does not become a queue). Governance is not loosened; it is **embedded**. Control stays centralized where it needs to be, in the policy, while execution is distributed.
 
 It is the combination of the three that matters. Enablement without self-service is training that does not become practice. Self-service without governance is fast chaos. Governance without enablement is the queue again, with another name. Together, they produce the result that gives this article its title: **verticals that launch faster, with less risk, without a central bottleneck.**
 
@@ -1070,7 +1065,7 @@ That is why the case's North Star was not "APIs published." It was **"active reu
 
 And here comes the honest self-critique, the kind a review panel always looks for: almost everything you build first (certification, quality gates, portal) attacks **supply**, not reuse. Is that a contradiction? No, if it is deliberate. Supply is a prerequisite of reuse: there is no reused API that was not published well first. The rule that closes the hole is the pilot's success criterion: it is not enough for the team to publish alone (*single-player*); the real proof is the API being **consumed by at least one other domain** (*multi-player*). If publishing volume goes up and reuse does not follow, the decision is agreed in advance: **reprioritize consumption before pushing more supply.**
 
-That is how the OKRs gained a KR that ties everything: besides reducing lead time, raising champion coverage, and protecting the SLA, an explicit key result of **reuse** — because, without it, the OKR would become a vanity metric dressed up as an outcome.
+That is how the OKRs gained a KR that ties everything: besides reducing lead time, raising champion coverage, and protecting the SLA, an explicit key result of **reuse**, because, without it, the OKR would become a vanity metric dressed up as an outcome.
 
 ---
 
@@ -1110,13 +1105,13 @@ Three things stayed, and they are the ones I would repeat in any platform contex
 
 **Measure demand, not supply.** A full catalog is the metric that deceives. Reuse, recurring consumption, retention of whoever consumes: that is where a platform's value actually lives.
 
-**Make the product the instrument of the agreement.** On a platform, the political decision and the product decision are the same. An API Champion is power with responsibility. A guardrail is control without a queue. A dashboard is trust through evidence. When the product materializes the agreement between speed and control, culture changes — not by speech, but by mechanism.
+**Make the product the instrument of the agreement.** On a platform, the political decision and the product decision are the same. An API Champion is power with responsibility. A guardrail is control without a queue. A dashboard is trust through evidence. When the product materializes the agreement between speed and control, culture changes, not by speech, but by mechanism.
 
 The platform stays invisible. Nobody is going to open the app and say "what beautiful federated governance." But the verticals will launch faster, the generalized incidents will disappear, and teams will publish on their own what used to wait in a queue. And that is, in the end, the best definition of success for a platform: **it disappears into everyone's workflow and leaves the company faster.**
 
 ---
 
-*This text is a capstone case for the Digital Product Leadership program (Tera). For confidentiality, the institution is not named; numbers with a public origin are treated as order of magnitude and the rest are illustrative. The practices and strategies described are generalizable to any horizontal platform in a large company.*
+*This text is a capstone case for the Digital Product Leadership program (Tera). For confidentiality, the institution is not named. The practices and strategies described are generalizable to any horizontal platform in a large company.*
 </script>
 
 <script>
